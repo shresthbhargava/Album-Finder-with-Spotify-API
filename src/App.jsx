@@ -10,7 +10,7 @@ import {
 import { useState, useEffect } from "react";
 
 const clientId = import.meta.env.VITE_CLIENT_ID;
-const clientSecret = import.meta.env.VITE_CLIENT_SECRET;
+const authUrl = `https://accounts.spotify.com/authorize?client_id=${CLIENT_ID}&response_type=token&redirect_uri=${redirectUri}&scope=user-read-private`;
 
 function App() {
   const [searchInput, setSearchInput] = useState("");
